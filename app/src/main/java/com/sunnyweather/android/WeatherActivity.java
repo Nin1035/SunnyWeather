@@ -1,20 +1,11 @@
 package com.sunnyweather.android;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.Response;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +16,10 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.jetbrains.annotations.NotNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.bumptech.glide.Glide;
 import com.sunnyweather.android.gson.Forecast;
@@ -35,7 +29,13 @@ import com.sunnyweather.android.service.AutoUpdateService;
 import com.sunnyweather.android.util.HttpUtil;
 import com.sunnyweather.android.util.Utility;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 public class WeatherActivity extends AppCompatActivity {
     private ScrollView weatherLayout;
@@ -119,8 +119,8 @@ public class WeatherActivity extends AppCompatActivity {
      */
     public void requestWeather(final String weatherId){
         Log.d("WeatherActivity", weatherId);
-        String weatherUrl = "https://api.heweather.net/s6/weather?location=" +
-                weatherId + "&key=138948890c4349baab0893d52848bf7b";
+        String weatherUrl = "https://free-api.heweather.net/s6/weather?location=" +
+                weatherId + "&key=96bcde75f1a54039a8ba3240cdf6826c";
         HttpUtil.sendOkHttpRequest(weatherUrl, new Callback() {
             @Override
             public void onFailure(@NotNull Call call, @NotNull IOException e) {

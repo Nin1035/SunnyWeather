@@ -1,13 +1,11 @@
 package com.sunnyweather.android;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,4 +21,3 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-

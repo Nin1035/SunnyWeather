@@ -14,10 +14,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.fragment.app.Fragment;
+
 import com.sunnyweather.android.db.City;
 import com.sunnyweather.android.db.County;
 import com.sunnyweather.android.db.Province;
-import com.sunnyweather.android.gson.Weather;
 import com.sunnyweather.android.util.HttpUtil;
 import com.sunnyweather.android.util.Utility;
 
@@ -27,7 +28,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.fragment.app.Fragment;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;

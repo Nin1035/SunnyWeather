@@ -55,7 +55,7 @@ public class AutoUpdateService extends Service {
             String weatherId = weather.basic.weatherId;
 
             String weatherUrl = "https://free-api.heweather.net/s6/weather?location=" +
-                    weatherId + "&key=138948890c4349baab0893d52848bf7b";
+                    weatherId + "&key=96bcde75f1a54039a8ba3240cdf6826c";
             HttpUtil.sendOkHttpRequest(weatherUrl, new Callback() {
                 @Override
                 public void onFailure(@NotNull Call call, @NotNull IOException e) {
