@@ -9,9 +9,9 @@ import android.os.IBinder;
 import android.os.SystemClock;
 import android.preference.PreferenceManager;
 
-import com.sunnyweather.gson.Weather;
-import com.sunnyweather.util.HttpUtil;
-import com.sunnyweather.util.Utility;
+import com.sunnyweather.android.gson.Weather;
+import com.sunnyweather.android.util.HttpUtil;
+import com.sunnyweather.android.util.Utility;
 
 import org.jetbrains.annotations.NotNull;
 

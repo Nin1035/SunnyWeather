@@ -1,14 +1,12 @@
 package com.sunnyweather.android.util;
 
-import android.icu.util.LocaleData;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.google.gson.Gson;
-import com.sunnyweather.db.City;
-import com.sunnyweather.db.County;
-import com.sunnyweather.db.Province;
-import com.sunnyweather.gson.Weather;
+import com.sunnyweather.android.db.City;
+import com.sunnyweather.android.db.County;
+import com.sunnyweather.android.db.Province;
+import com.sunnyweather.android.gson.Weather;
 
 import org.json.JSONArray;
 import org.json.JSONException;

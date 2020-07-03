@@ -14,12 +14,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.sunnyweather.db.City;
-import com.sunnyweather.db.County;
-import com.sunnyweather.db.Province;
-import com.sunnyweather.gson.Weather;
-import com.sunnyweather.util.HttpUtil;
-import com.sunnyweather.util.Utility;
+import com.sunnyweather.android.db.City;
+import com.sunnyweather.android.db.County;
+import com.sunnyweather.android.db.Province;
+import com.sunnyweather.android.gson.Weather;
+import com.sunnyweather.android.util.HttpUtil;
+import com.sunnyweather.android.util.Utility;
 
 import org.litepal.LitePal;
 

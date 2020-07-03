@@ -28,12 +28,12 @@ import android.widget.Toast;
 import org.jetbrains.annotations.NotNull;
 
 import com.bumptech.glide.Glide;
-import com.sunnyweather.gson.Forecast;
-import com.sunnyweather.gson.Lifestyle;
-import com.sunnyweather.gson.Weather;
-import com.sunnyweather.service.AutoUpdateService;
-import com.sunnyweather.util.HttpUtil;
-import com.sunnyweather.util.Utility;
+import com.sunnyweather.android.gson.Forecast;
+import com.sunnyweather.android.gson.Lifestyle;
+import com.sunnyweather.android.gson.Weather;
+import com.sunnyweather.android.service.AutoUpdateService;
+import com.sunnyweather.android.util.HttpUtil;
+import com.sunnyweather.android.util.Utility;
 
 import java.io.IOException;
 
